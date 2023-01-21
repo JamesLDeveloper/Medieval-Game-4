@@ -110,6 +110,7 @@ switch (progress) {
 //                System.out.println("We just saved your game...");
                     break;
                 } else if (chest.equalsIgnoreCase("x")) {
+                    System.out.println("Goodbye Traveller, return soon to conquer to hordes of evil!");
                     System.exit(0);
                     break;
                 } else {
@@ -190,6 +191,7 @@ switch (progress) {
                     game.save(console);
                     break;
                 } else if (game.zombie.equalsIgnoreCase("x")) {
+                    System.out.println("Goodbye Traveller, return soon to conquer to hordes of evil!");
                     System.exit(0);
                     break;
                 } else {
@@ -242,6 +244,7 @@ switch (progress) {
                     game.save(console);
                     break;
                 } else if (game.chestTwo.equalsIgnoreCase("x")) {
+                    System.out.println("Goodbye Traveller, return soon to conquer to hordes of evil!");
                     System.exit(0);
                     break;
                 } else {
@@ -328,6 +331,7 @@ switch (progress) {
                     break;
 
                 } else if (game.enemy2.equalsIgnoreCase("x")) {
+                    System.out.println("Goodbye Traveller, return soon to conquer to hordes of evil!");
                     System.exit(0);
                     break;
                 } else {
@@ -381,6 +385,7 @@ switch (progress) {
                     game.save(console);
                     break;
                 } else if (game.doorOne.equalsIgnoreCase("x")) {
+                    System.out.println("Goodbye Traveller, return soon to conquer to hordes of evil!");
                     System.exit(0);
                     break;
                 } else {
@@ -461,8 +466,10 @@ switch (progress) {
                     game.player.takeDamage(game.loki.getEnemyDamage() / 2);
                     progress = "level7";
 //                    level6InProgress = false;
-                    System.out.println("\nYou discover a chest. Would you like to open it? Type y for yes, n for no, s for save, x for exit.");
-                    game.doorOne = console.next().toLowerCase();
+//                    System.out.println("\nYou discover a chest. Would you like to open it? Type y for yes, n for no, s for save, x for exit.");
+//                    game.doorOne = console.next().toLowerCase();
+                    System.out.println("Your cowardly actions have not gone unnoticed, the King has thrown you in jail and you journey is at an end. Better luck next time.");
+                    System.exit(0);
                     break;
 
                 } else if (game.enemy3.equalsIgnoreCase("s")) {
@@ -474,6 +481,7 @@ switch (progress) {
                     game.save(console);
                     break;
                 } else if (game.enemy3.equalsIgnoreCase("x")) {
+                    System.out.println("Goodbye Traveller, return soon to conquer to hordes of evil!");
                     System.exit(0);
                     break;
                 } else {

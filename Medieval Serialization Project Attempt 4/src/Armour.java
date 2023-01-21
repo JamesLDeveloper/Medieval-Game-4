@@ -20,10 +20,13 @@ public class Armour implements Serializable {
 
     /* Instance Methods */
     public void reduceDurability(int reduction) {
-        durability -= reduction;
-        if (durability <= 0) {
-            System.out.println("Your " + name + " has been rendered useless. It cannot be repaired and must be sold for scraps.");
-            defenseRating = 0;
+        if (durability > 0) {
+            durability -= reduction;
+            if (durability <= 0) {
+                durability = 0;
+                System.out.println("Your " + name + " has been rendered useless. It cannot be repaired and must be sold for scraps.");
+                defenseRating = 0;
+            }
         }
     }
 
