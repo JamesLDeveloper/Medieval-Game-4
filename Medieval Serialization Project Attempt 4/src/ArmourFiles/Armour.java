@@ -59,4 +59,8 @@ public class Armour implements Serializable {
         }
         return name + ". Durability: " + durability + ", Defense Rating: " + defenseRating + "\n";
     }
+
+    public int getDurability() {
+        return this.durability;
+    }
 }
